@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="about">
+    <div>
       <h1>This is an about page</h1>
     </div>
   </Layout>
@@ -19,7 +19,7 @@ export default {
     meta: [
       {
         name: 'description',
-        content: 'Here is something about starter pack',
+        content: 'TBA',
       },
     ],
   },

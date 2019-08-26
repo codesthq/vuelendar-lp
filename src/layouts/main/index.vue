@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
-    <header class="main__header">
-      <Nav />
+  <div>
+    <header>
+      <!-- Add header -->
     </header>
     <main>
       <slot />
@@ -9,21 +9,11 @@
   </div>
 </template>
 <script>
-import Nav from '@components/Nav';
-
 export default {
   name: 'Main',
-  components: {
-    Nav,
-  },
+  components: {},
 };
 </script>
 <style lang="scss">
 @import '~@design';
-
-.main {
-  &__header {
-    margin-bottom: size(2);
-  }
-}
 </style>

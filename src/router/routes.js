@@ -12,10 +12,28 @@ export default [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/features',
+    name: 'features',
     component: async () =>
       lazyLoad(import(/* webpackChunkName: "about" */ '../views/About')),
+  },
+  {
+    path: '/demo',
+    name: 'demo',
+    component: async () =>
+      lazyLoad(import(/* webpackChunkName: "demo" */ '../views/About')),
+  },
+  {
+    path: '/docs',
+    name: 'docs',
+    component: async () =>
+      lazyLoad(import(/* webpackChunkName: "docs" */ '../views/About')),
+  },
+  {
+    path: '/team',
+    name: 'team',
+    component: async () =>
+      lazyLoad(import(/* webpackChunkName: "team" */ '../views/About')),
   },
   {
     path: '/404',

@@ -7,7 +7,6 @@ describe('@layouts/main', () => {
       slots: {
         default: slotContent,
       },
-      stubs: ['router-link', 'router-view'],
     });
     expect(element.innerHTML).toContain(slotContent);
   });

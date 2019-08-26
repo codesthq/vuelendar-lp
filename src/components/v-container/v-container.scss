@@ -1,0 +1,24 @@
+@import '~@design';
+
+.container {
+  width: 100%;
+  padding: size(2);
+
+  @include respond-to('smaller') {
+    width: $breakpoint-smaller;
+    padding: 0 size(3);
+    margin: 0 auto;
+  }
+
+  @include respond-to('medium') {
+    width: $breakpoint-medium;
+  }
+
+  @include respond-to('large') {
+    width: $breakpoint-large;
+  }
+
+  @include respond-to('x-large') {
+    width: $breakpoint-x-large;
+  }
+}

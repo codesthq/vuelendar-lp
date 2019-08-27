@@ -1,0 +1,24 @@
+@import '~@design';
+
+.button {
+  display: inline-block;
+  padding: size(3) size(10);
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+  background-color: $color-green-500;
+  border: none;
+  border-radius: size(100);
+
+  &--ghost {
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-green-500;
+  }
+
+  &--invert {
+    color: $color-black;
+    background-color: $color-white;
+  }
+}

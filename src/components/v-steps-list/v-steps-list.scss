@@ -26,6 +26,16 @@
       line-height: 1;
       color: $color-green-500;
       content: counter(item);
+      opacity: 0;
+      transition: transform 400ms ease-out, opacity 400ms ease-in-out;
+      transform: translateX(size(10));
+    }
+
+    &.in-viewport {
+      &:before {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 

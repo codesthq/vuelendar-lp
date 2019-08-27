@@ -1,5 +1,9 @@
 <template>
-  <VPageSection :offset="1" :size="10" class="section-usage">
+  <VPageSection
+    :offset="{ medium: 1 }"
+    :size="{ medium: 10 }"
+    class="section-usage"
+  >
     <h2 class="section-usage__title">Usage</h2>
     <VStepsList />
   </VPageSection>

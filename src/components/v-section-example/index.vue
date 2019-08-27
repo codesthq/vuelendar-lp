@@ -1,5 +1,9 @@
 <template>
-  <VPageSection :offset="2" :size="8" class="section-example">
+  <VPageSection
+    :offset="{ medium: 2 }"
+    :size="{ medium: 8 }"
+    class="section-example"
+  >
     <section>
       <header class="section-example__header">
         <h2 class="section-example__title">

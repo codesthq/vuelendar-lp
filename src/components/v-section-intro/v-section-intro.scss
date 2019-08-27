@@ -3,12 +3,18 @@
 .intro-wrapper {
   position: relative;
   z-index: 1;
-  background: url('~@assets/Vuelendar-background.png') no-repeat 125% 100%;
-  background-size: contain;
+
+  @include respond-to('x-large') {
+    background: url('~@assets/Vuelendar-background.png') no-repeat 125% 100%;
+    background-size: contain;
+  }
 }
 .section-intro {
-  width: 60%;
   padding: 0 size(3);
+
+  @include respond-to('x-large') {
+    width: 60%;
+  }
 
   &__header {
     margin-bottom: size(12);
@@ -28,16 +34,39 @@
     color: $color-gray-800;
   }
 
+  &__table {
+    @include respond-to('medium') {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    @include respond-to('x-large') {
+      width: 100%;
+    }
+  }
+
   &__actions {
-    display: flex;
     padding: 0;
-    margin-bottom: size(36);
+    margin-bottom: size(4);
     list-style: none;
+
+    @include respond-to('smaller') {
+      margin-bottom: size(36);
+    }
+
+    @include respond-to('small') {
+      display: flex;
+    }
   }
 
   &__action {
     & + & {
-      margin-left: size(5);
+      margin-top: size(2);
+
+      @include respond-to('small') {
+        margin-top: 0;
+        margin-left: size(5);
+      }
     }
   }
 }

@@ -3,12 +3,17 @@
 .section-example {
   position: relative;
   z-index: 0;
-  padding-top: size(76);
-  padding-bottom: size(30);
+  padding-top: size(54);
+  padding-bottom: size(10);
   margin-top: size(-42);
   color: $color-white;
   text-align: center;
   background-color: $color-green-500;
+
+  @include respond-to('smaller') {
+    padding-top: size(76);
+    padding-bottom: size(30);
+  }
 
   &__header {
     margin-bottom: size(7);

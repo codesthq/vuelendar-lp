@@ -13,22 +13,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     height: size(56);
     opacity: 0;
     transition: opacity 400ms ease-in-out;
     transform: translateY(size(5));
 
-    &:nth-child(n + 3) {
+    @include respond-to('small-max') {
       border-top: 1px solid $color-gray-100;
-    }
 
-    &:nth-child(even) {
-      border-left: 1px solid $color-gray-100;
+      &:first-child {
+        border-top: none;
+      }
     }
 
     &.in-viewport {
       opacity: 1;
+    }
+
+    @include respond-to('small') {
+      width: 50%;
+
+      &:nth-child(n + 3) {
+        border-top: 1px solid $color-gray-100;
+      }
+
+      &:nth-child(even) {
+        border-left: 1px solid $color-gray-100;
+      }
     }
   }
 

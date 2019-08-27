@@ -1,16 +1,22 @@
 @import '~@design';
 
+$usedBreakpoints: ('medium');
+
 .page-section {
   width: 100%;
 
   &__inner {
-    @for $i from 1 through 12 {
-      &--size-#{$i} {
-        width: columnsize($i);
-      }
+    @each $cb in $usedBreakpoints {
+      @for $i from 1 through 12 {
+        @include respond-to($cb) {
+          &--size-#{$cb}-#{$i} {
+            width: columnsize($i);
+          }
 
-      &--offset-#{$i} {
-        margin-left: columnsize($i);
+          &--offset-#{$cb}-#{$i} {
+            margin-left: columnsize($i);
+          }
+        }
       }
     }
   }

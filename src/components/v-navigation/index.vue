@@ -6,7 +6,7 @@
           <img :src="require('@assets/Vuelendar-logo.png')" alt="" />
         </router-link>
       </div>
-      <nav>
+      <nav class="navigation__main">
         <ul class="navigation__list">
           <li class="navigation__item">
             <router-link class="navigation__link" to="/">

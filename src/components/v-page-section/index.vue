@@ -9,32 +9,45 @@
 </template>
 
 <script>
-import columnSizeValidator from '@utils/columnSizeValidator';
-
 import VContainer from '@components/v-container';
 
 export default {
   name: 'VPageSection',
   props: {
     size: {
-      type: Number,
-      default: 12,
-      validator: columnSizeValidator,
+      type: Object,
+      default: () => {},
     },
     offset: {
-      type: Number,
-      default: 0,
-      validator: columnSizeValidator,
+      type: Object,
+      default: () => {},
     },
   },
   components: {
     VContainer,
   },
   computed: {
+    sizeClasses() {
+      const classBase = 'page-section__inner--size-';
+      if (this.size) {
+        const breakpoints = Object.keys(this.size);
+        return breakpoints.map((b) => classBase + b + '-' + this.size[b]);
+      }
+
+      return [];
+    },
+    offsetClasses() {
+      const classBase = 'page-section__inner--offset-';
+      if (this.offset) {
+        const breakpoints = Object.keys(this.offset);
+        return breakpoints.map((b) => classBase + b + '-' + this.offset[b]);
+      }
+
+      return [];
+    },
     computedInnerClass() {
-      const classBase = 'page-section__inner';
-      const sizeClass = classBase + '--size-' + this.size;
-      const offsetClass = classBase + '--offset-' + this.offset;
+      const sizeClass = this.sizeClasses.join(' ');
+      const offsetClass = this.offsetClasses.join(' ');
 
       return sizeClass + ' ' + offsetClass;
     },

@@ -1,7 +1,9 @@
 @import '~@design';
 
 .section-usage {
-  padding-top: size(32);
+  @include respond-to('smaller') {
+    padding-top: size(32);
+  }
 
   &__title {
     position: absolute;

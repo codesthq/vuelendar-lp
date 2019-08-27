@@ -5,6 +5,14 @@
   align-items: flex-start;
   justify-content: space-between;
 
+  &__main {
+    display: none;
+
+    @include respond-to('medium') {
+      display: block;
+    }
+  }
+
   &__list {
     display: flex;
     align-items: center;

@@ -1,0 +1,59 @@
+@import '~@design';
+
+.steps-list {
+  padding: 0;
+  list-style: none;
+  counter-reset: item;
+
+  &__item {
+    position: relative;
+    padding-right: 20%;
+    padding-bottom: size(15);
+    padding-left: 20%;
+    counter-increment: item;
+
+    &:not(:last-child) {
+      margin-bottom: size(15);
+      border-bottom: 1px solid $color-gray-100;
+    }
+
+    &:before {
+      position: absolute;
+      top: size(-4);
+      left: 0;
+      font-size: 120px;
+      font-weight: 300;
+      line-height: 1;
+      color: $color-green-500;
+      content: counter(item);
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    font-size: 36px;
+    font-weight: 600;
+    color: $color-green-500;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: size(-6);
+      width: size(13);
+      height: 1px;
+      content: '';
+      background-color: $color-green-500;
+      transform: translateX(-100%);
+    }
+  }
+
+  &__item-paragraph {
+    margin: 0;
+    font-size: 18px;
+    line-height: 2;
+
+    & + & {
+      margin-top: size(10);
+    }
+  }
+}

@@ -10,15 +10,43 @@
   background-color: $color-green-500;
   border: none;
   border-radius: size(100);
+  box-shadow: 0 size(4) size(3) size(-4) rgba($color-black, 0);
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  will-change: box-shadow;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($color-green-500, 5);
+    box-shadow: 0 size(4) size(3) size(-4) rgba($color-black, 0.4);
+  }
 
   &--ghost {
     color: $color-black;
     background-color: transparent;
     border: 1px solid $color-green-500;
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out,
+      color 250ms ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($color-green-500, 20);
+      background-color: rgba(darken($color-green-500, 20), 0.08);
+    }
   }
 
   &--invert {
     color: $color-black;
     background-color: $color-white;
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out,
+      color 250ms ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-white;
+      background-color: $color-black;
+    }
   }
 }

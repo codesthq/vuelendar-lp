@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <header>
-      <!-- Add header -->
+  <div class="main">
+    <header class="main__header">
+      <VNavigation />
     </header>
     <main>
       <slot />
@@ -9,11 +9,14 @@
   </div>
 </template>
 <script>
+import VNavigation from '@components/v-navigation';
+
 export default {
   name: 'Main',
-  components: {},
+  components: {
+    VNavigation,
+  },
 };
 </script>
-<style lang="scss">
-@import '~@design';
-</style>
+
+<style lang="scss" src="./main.scss" />

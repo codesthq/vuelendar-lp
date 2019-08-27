@@ -1,0 +1,40 @@
+@import '~@design';
+.intro-wrapper {
+  background: url('~@assets/Vuelendar-background.png') no-repeat 125% 100%;
+  background-size: contain;
+}
+.section-intro {
+  width: 60%;
+  padding: 0 size(3);
+
+  &__header {
+    margin-bottom: size(12);
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 500;
+    color: $color-gray-800;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 400;
+    color: $color-gray-800;
+  }
+
+  &__actions {
+    display: flex;
+    padding: 0;
+    margin-bottom: size(36);
+    list-style: none;
+  }
+
+  &__action {
+    & + & {
+      margin-left: size(5);
+    }
+  }
+}

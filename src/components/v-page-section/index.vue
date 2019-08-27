@@ -1,5 +1,5 @@
 <template>
-  <div class="page-section" :class="computedRootClass">
+  <div class="page-section">
     <VContainer>
       <div class="page-section__inner" :class="computedInnerClass">
         <slot />
@@ -26,20 +26,11 @@ export default {
       default: 0,
       validator: columnSizeValidator,
     },
-    color: {
-      type: String,
-      default: null,
-    },
   },
   components: {
     VContainer,
   },
   computed: {
-    computedRootClass() {
-      const classBase = 'page-section';
-      return this.color ? classBase + '--color-' + this.color : '';
-    },
-
     computedInnerClass() {
       const classBase = 'page-section__inner';
       const sizeClass = classBase + '--size-' + this.size;

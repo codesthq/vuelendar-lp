@@ -3,12 +3,6 @@
 .page-section {
   width: 100%;
 
-  &--color {
-    &-brand {
-      background-color: $color-green-500;
-    }
-  }
-
   &__inner {
     @for $i from 1 through 12 {
       &--size-#{$i} {

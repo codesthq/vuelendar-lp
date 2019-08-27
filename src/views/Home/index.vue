@@ -2,22 +2,7 @@
   <Layout>
     <div class="page-home">
       <VSectionIntro />
-      <VPageSection :offset="2" :size="8" color="brand">
-        <h2>
-          Selecting a date was never easier
-        </h2>
-        <p>
-          Vuelendar is fully-interactive and allows you to manage events freely.
-          You can specify various series of selections and style them with SCSS
-          easily.
-        </p>
-
-        <div>
-          <button>
-            See examples
-          </button>
-        </div>
-      </VPageSection>
+      <VSectionExample />
       <VPageSection :offset="1" :size="10">
         <h2>Usage</h2>
         <ol>
@@ -67,6 +52,7 @@
 import Layout from '@layouts/main';
 import VPageSection from '@components/v-page-section';
 import VSectionIntro from '@components/v-section-intro';
+import VSectionExample from '@components/v-section-example';
 
 export default {
   name: 'Home',
@@ -74,6 +60,7 @@ export default {
     Layout,
     VPageSection,
     VSectionIntro,
+    VSectionExample,
   },
   page: {
     title: 'Vuelendar - Home',

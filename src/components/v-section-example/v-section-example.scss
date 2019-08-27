@@ -1,0 +1,29 @@
+@import '~@design';
+
+.section-example {
+  position: relative;
+  z-index: -1;
+  padding-top: size(76);
+  padding-bottom: size(30);
+  margin-top: size(-42);
+  color: $color-white;
+  text-align: center;
+  background-color: $color-green-500;
+
+  &__header {
+    margin-bottom: size(7);
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  &__content {
+    margin-bottom: size(16);
+    font-size: 36px;
+    font-weight: 300;
+  }
+}

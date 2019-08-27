@@ -32,7 +32,7 @@
     &:focus,
     &:active {
       color: darken($color-green-500, 20);
-      background-color: rgba(darken($color-green-500, 20), 0.08);
+      background-color: transparent;
     }
   }
 

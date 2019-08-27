@@ -61,10 +61,19 @@
     }
 
     &--icon {
+      color: $color-green-500;
+
       svg {
         width: size(13);
         height: size(13);
-        fill: $color-green-500;
+        pointer-events: none;
+        fill: currentColor;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-gray-800;
       }
     }
   }

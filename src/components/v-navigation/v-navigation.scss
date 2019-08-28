@@ -19,23 +19,8 @@
     }
   }
 
-  &__toggle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: size(10);
-    height: size(10);
-    padding: 0;
-    background-color: $color-white;
-    border: 1px solid $color-green-500;
-
-    span {
-      display: block;
-      width: size(6);
-      height: 1px;
-      margin: 3px 0;
-      background-color: $color-black;
-    }
+  &__logo {
+    max-width: 100%;
+    height: auto;
   }
 }

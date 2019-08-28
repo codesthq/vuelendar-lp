@@ -3,7 +3,11 @@
     <div class="navigation">
       <div>
         <router-link class="navigation__link navigation__link--blank" to="/">
-          <img :src="require('@assets/Vuelendar-logo.png')" alt="" />
+          <img
+            :src="require('@assets/Vuelendar-logo.png')"
+            alt=""
+            class="navigation__logo"
+          />
         </router-link>
       </div>
       <div class="navigation__desktop">
@@ -32,7 +36,6 @@ export default {
   },
   methods: {
     toggleSidebar() {
-      console.log('asd');
       this.sidebarOpened = !this.sidebarOpened;
     },
   },

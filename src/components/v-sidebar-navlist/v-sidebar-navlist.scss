@@ -43,16 +43,16 @@
     &:after {
       position: absolute;
       top: 50%;
-      left: 0;
-      width: 100%;
+      left: 50%;
+      width: size(6);
       height: 1px;
       content: '';
       background-color: $color-black;
-      transform: rotate(-45deg);
+      transform: translateX(-50%) rotate(-45deg);
     }
 
     &:after {
-      transform: rotate(45deg);
+      transform: translateX(-50%) rotate(45deg);
     }
   }
 

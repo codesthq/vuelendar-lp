@@ -6,7 +6,7 @@
   overflow: hidden;
   background: $color-white;
   border-radius: size(4);
-  box-shadow: 0 30px 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 size(6) size(4) size(-1) rgba(0, 0, 0, 0.3);
 
   &__item {
     display: flex;

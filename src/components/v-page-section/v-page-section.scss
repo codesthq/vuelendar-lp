@@ -10,11 +10,11 @@ $usedBreakpoints: ('medium');
       @for $i from 1 through 12 {
         @include respond-to($cb) {
           &--size-#{$cb}-#{$i} {
-            width: columnsize($i);
+            width: column-size($i);
           }
 
           &--offset-#{$cb}-#{$i} {
-            margin-left: columnsize($i);
+            margin-left: column-size($i);
           }
         }
       }

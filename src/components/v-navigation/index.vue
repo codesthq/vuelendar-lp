@@ -6,51 +6,46 @@
           <img :src="require('@assets/Vuelendar-logo.png')" alt="" />
         </router-link>
       </div>
-      <nav class="navigation__main">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <router-link class="navigation__link" to="/">
-              Features
-            </router-link>
-          </li>
-          <li class="navigation__item">
-            <router-link class="navigation__link" to="/">
-              Demo
-            </router-link>
-          </li>
-          <li class="navigation__item">
-            <router-link class="navigation__link" to="/">
-              Docs
-            </router-link>
-          </li>
-          <li class="navigation__item">
-            <router-link class="navigation__link" to="/">
-              Team
-            </router-link>
-          </li>
-          <li class="navigation__item">
-            <a
-              class="navigation__link navigation__link--icon"
-              href="https://github.com/codesthq/vuelendar"
-            >
-              <VSvgIcon icon="github" />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="navigation__desktop">
+        <VInlineNavlist />
+      </div>
+      <div class="navigation__mobile">
+        <button
+          @click="toggleSidebar"
+          class="navigation__toggle"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <VSidebarNavlist :opened="sidebarOpened" @closeClick="toggleSidebar" />
+      </div>
     </div>
   </VContainer>
 </template>
 
 <script>
 import VContainer from '@components/v-container';
-import VSvgIcon from '@components/v-svg-icon';
+import VInlineNavlist from '@components/v-inline-navlist';
+import VSidebarNavlist from '@components/v-sidebar-navlist';
 
 export default {
   name: 'VNavigation',
+  data() {
+    return {
+      sidebarOpened: false,
+    };
+  },
+  methods: {
+    toggleSidebar() {
+      this.sidebarOpened = !this.sidebarOpened;
+    },
+  },
   components: {
     VContainer,
-    VSvgIcon,
+    VInlineNavlist,
+    VSidebarNavlist,
   },
 };
 </script>

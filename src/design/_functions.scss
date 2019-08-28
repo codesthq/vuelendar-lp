@@ -5,6 +5,6 @@
 }
 
 // @TODO: move column count to different config
-@function columnSize($count: 1) {
+@function column-size($count: 1) {
   @return calc(100% / 12 * #{$count});
 }

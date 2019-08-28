@@ -1,0 +1,46 @@
+@import '~@design';
+
+.sidebar-navlist {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: size(70);
+  overflow: auto;
+  background-color: $color-white;
+  box-shadow: size(3) 0 size(8) size(-3) rgba($color-black, 0);
+  transition: transform 400ms ease-in-out, box-shadow 400ms ease-in-out;
+  transform: translateX(100%);
+  will-change: box-shadow;
+
+  &--opened {
+    box-shadow: size(3) 0 size(8) size(-2) rgba($color-black, 0.5);
+    transform: translateX(0);
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    & + & {
+      border-top: 1px solid $color-gray-100;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: size(3) size(2);
+    font-size: 18px;
+    color: $color-black;
+    text-align: right;
+    text-decoration: none;
+
+    &.router-link-active {
+      color: $color-green-500;
+    }
+  }
+}

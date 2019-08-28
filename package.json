@@ -13,7 +13,7 @@
     "lint:prettier": "prettier --write --loglevel warn",
     "lint:all:eslint": "eslint --fix --ext .js,.vue .",
     "lint:all:stylelint": "stylelint --fix \"src/**/*.{vue,scss}\"",
-    "lint:all:prettier": "prettier --write --loglevel warn \"**/*.{js,json,css,scss,vue,html}\"",
+    "lint:all:prettier": "prettier --write --loglevel warn \"**/*.{js,json,css,scss,vue}\"",
     "lint": "run-s lint:all:*",
     "test:unit": "cross-env VUE_APP_TEST=unit vue-cli-service test:unit",
     "test:unit:file": "cross-env VUE_APP_TEST=unit vue-cli-service test:unit --bail --findRelatedTests",

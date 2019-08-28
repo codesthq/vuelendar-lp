@@ -21,7 +21,7 @@ export default [
     path: '/demo',
     name: 'demo',
     component: async () =>
-      lazyLoad(import(/* webpackChunkName: "demo" */ '../views/About')),
+      lazyLoad(import(/* webpackChunkName: "demo" */ '../views/Demo')),
   },
   {
     path: '/docs',

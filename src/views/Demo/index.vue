@@ -2,8 +2,7 @@
   <Layout>
     <div class="page-demo">
       <VContainer>
-        <div class="page-demo__section">
-          <h2>Single date</h2>
+        <VDemoSection title="Single date">
           <iframe
             src="https://codesandbox.io/embed/vue-template-e482d?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue"
             title="Vue Template"
@@ -11,10 +10,9 @@
             style="width:100%; height:500px; overflow:hidden; border:0; border-radius: 4px;"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           ></iframe>
-        </div>
+        </VDemoSection>
 
-        <div class="page-demo__section">
-          <h2>Range</h2>
+        <VDemoSection title="Range">
           <iframe
             src="https://codesandbox.io/embed/vue-template-fh1cy?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue"
             title="Vue Template"
@@ -22,10 +20,9 @@
             style="width:100%; height:500px; overflow:hidden; border:0; border-radius: 4px;"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           ></iframe>
-        </div>
+        </VDemoSection>
 
-        <div class="page-demo__section">
-          <h2>Disable dates</h2>
+        <VDemoSection title="Disable dates">
           <iframe
             src="https://codesandbox.io/embed/vue-template-ktehm?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue"
             title="Vue Template"
@@ -33,10 +30,9 @@
             style="width:100%; height:500px; overflow:hidden; border:0; border-radius: 4px;"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           ></iframe>
-        </div>
+        </VDemoSection>
 
-        <div class="page-demo__section">
-          <h2>Disable from</h2>
+        <VDemoSection title="Disable from">
           <iframe
             src="https://codesandbox.io/embed/vue-template-ls7ho?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue"
             title="Vue Template"
@@ -44,10 +40,9 @@
             style="width:100%; height:500px; overflow:hidden; border:0; border-radius: 4px;"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           ></iframe>
-        </div>
+        </VDemoSection>
 
-        <div class="page-demo__section">
-          <h2>Disable to</h2>
+        <VDemoSection title="Disable to">
           <iframe
             src="https://codesandbox.io/embed/vue-template-fpvo5?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue"
             title="Vue Template"
@@ -55,7 +50,7 @@
             style="width:100%; height:500px; overflow:hidden; border:0; border-radius: 4px;"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           ></iframe>
-        </div>
+        </VDemoSection>
       </VContainer>
     </div>
   </Layout>
@@ -64,12 +59,14 @@
 <script>
 import Layout from '@layouts/main';
 import VContainer from '@components/v-container';
+import VDemoSection from '@components/v-demo-section';
 
 export default {
   name: 'About',
   components: {
     Layout,
     VContainer,
+    VDemoSection,
   },
   page: {
     title: 'Vuelendar - Demo',

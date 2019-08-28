@@ -28,6 +28,11 @@
   }
 }
 
+/* stylelint-disable-next-line */
+#nprogress .bar {
+  background-color: $color-green-500;
+}
+
 .app {
   min-height: 100vh;
 }

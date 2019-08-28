@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import inViewportDirective from 'vue-in-viewport-directive';
-Vue.directive('in-viewport', inViewportDirective);
-
 import modulesFactory from './modules';
 
 Vue.use(Vuex);

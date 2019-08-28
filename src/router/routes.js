@@ -1,9 +1,6 @@
 import Home from '@views/Home';
-
-const lazyLoad = async (importView) => {
-  const view = await importView;
-  return view.default;
-};
+import Demo from '@views/Demo';
+import About from '@views/About';
 
 export default [
   {
@@ -14,35 +11,25 @@ export default [
   {
     path: '/features',
     name: 'features',
-    component: async () =>
-      lazyLoad(import(/* webpackChunkName: "about" */ '../views/About')),
+    component: About,
   },
   {
     path: '/demo',
     name: 'demo',
-    component: async () =>
-      lazyLoad(import(/* webpackChunkName: "demo" */ '../views/Demo')),
+    component: Demo,
   },
   {
     path: '/docs',
     name: 'docs',
-    component: async () =>
-      lazyLoad(import(/* webpackChunkName: "docs" */ '../views/About')),
+    component: About,
   },
   {
     path: '/team',
     name: 'team',
-    component: async () =>
-      lazyLoad(import(/* webpackChunkName: "team" */ '../views/About')),
-  },
-  {
-    path: '/404',
-    name: '404',
-    component: async () =>
-      lazyLoad(import(/* webpackChunkName: "404" */ '../views/NotFound')),
+    component: About,
   },
   {
     path: '*',
-    redirect: '404',
+    redirect: 'home',
   },
 ];

@@ -31,6 +31,7 @@ if (process.env.VUE_APP_TEST === 'e2e') {
     router,
     store,
     render: (h) => h(App),
+    mounted: () => document.dispatchEvent(new Event('x-app-rendered')),
   }).$mount('#app');
 
   // If running e2e tests attach the app to the window for convenience

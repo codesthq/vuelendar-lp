@@ -2,7 +2,10 @@
   <VContainer>
     <div class="navigation">
       <div class="navigation__brand">
-        <router-link class="navigation__link navigation__link--blank" to="/">
+        <router-link
+          class="navigation__link navigation__link--blank"
+          :to="{ name: 'home' }"
+        >
           <img
             :src="require('@assets/Vuelendar-logo.png')"
             alt=""

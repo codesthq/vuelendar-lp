@@ -8,6 +8,7 @@ Vue.use(VueRouter);
 Vue.use(VueMeta, { keyName: 'page' });
 
 const router = new VueRouter({
+  base: process.env.NODE_ENV === 'production' ? '/vuelendar-lp/' : '/',
   routes,
   mode: 'history',
   scrollBehavior(to, from, savedPosition) {

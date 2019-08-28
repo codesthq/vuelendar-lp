@@ -11,7 +11,7 @@ export default {
   name: 'VButton',
   props: {
     to: {
-      type: String,
+      type: Object,
     },
     type: {
       type: String,

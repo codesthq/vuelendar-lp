@@ -15,10 +15,10 @@
       </div>
       <ul class="section-intro__actions">
         <li class="section-intro__action">
-          <VButton to="/">Live Demo</VButton>
+          <VButton :to="{ name: 'home' }">Live Demo</VButton>
         </li>
         <li class="section-intro__action">
-          <VButton type="ghost" to="/">Dowanload</VButton>
+          <VButton type="ghost" :to="{ name: 'home' }">Dowanload</VButton>
         </li>
       </ul>
 

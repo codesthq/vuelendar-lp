@@ -1,6 +1,6 @@
 <template>
   <div class="perks-table">
-    <div class="perks-table__item" v-in-viewport.once>
+    <div class="perks-table__item">
       <div class="perks-table__icon">
         <VSvgIcon icon="puzzle" />
       </div>
@@ -8,7 +8,7 @@
         Easy to use
       </div>
     </div>
-    <div class="perks-table__item" v-in-viewport.once>
+    <div class="perks-table__item">
       <div class="perks-table__icon">
         <VSvgIcon icon="scale" />
       </div>
@@ -16,7 +16,7 @@
         Extendable
       </div>
     </div>
-    <div class="perks-table__item" v-in-viewport.once>
+    <div class="perks-table__item">
       <div class="perks-table__icon">
         <VSvgIcon icon="balance" />
       </div>
@@ -24,7 +24,7 @@
         Optimized
       </div>
     </div>
-    <div class="perks-table__item" v-in-viewport.once>
+    <div class="perks-table__item">
       <div class="perks-table__icon">
         <VSvgIcon icon="tag" />
       </div>

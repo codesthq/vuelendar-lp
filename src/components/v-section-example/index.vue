@@ -18,7 +18,7 @@
         </p>
       </div>
       <div>
-        <VButton type="invert" to="/">See Examples</VButton>
+        <VButton type="invert" :to="{ name: 'home' }">See Examples</VButton>
       </div>
     </section>
   </VPageSection>

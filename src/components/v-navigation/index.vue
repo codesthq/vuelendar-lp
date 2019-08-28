@@ -10,15 +10,7 @@
         <VInlineNavlist />
       </div>
       <div class="navigation__mobile">
-        <button
-          @click="toggleSidebar"
-          class="navigation__toggle"
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <VBurgerButton @click="toggleSidebar" />
         <VSidebarNavlist :opened="sidebarOpened" @closeClick="toggleSidebar" />
       </div>
     </div>
@@ -29,6 +21,7 @@
 import VContainer from '@components/v-container';
 import VInlineNavlist from '@components/v-inline-navlist';
 import VSidebarNavlist from '@components/v-sidebar-navlist';
+import VBurgerButton from '@components/v-burger-button';
 
 export default {
   name: 'VNavigation',
@@ -39,6 +32,7 @@ export default {
   },
   methods: {
     toggleSidebar() {
+      console.log('asd');
       this.sidebarOpened = !this.sidebarOpened;
     },
   },
@@ -46,6 +40,7 @@ export default {
     VContainer,
     VInlineNavlist,
     VSidebarNavlist,
+    VBurgerButton,
   },
 };
 </script>

@@ -1,5 +1,13 @@
 <template>
   <nav class="sidebar-navlist" :class="{ 'sidebar-navlist--opened': opened }">
+    <div class="sidebar-navlist__header">
+      <h2 class="sidebar-navlist__title">Vuelendar</h2>
+      <button
+        class="sidebar-navlist__close"
+        aria-label="close"
+        @click="closeClick"
+      ></button>
+    </div>
     <ul class="sidebar-navlist__list">
       <li class="sidebar-navlist__item">
         <router-link class="sidebar-navlist__link" to="/features">

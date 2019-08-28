@@ -1,7 +1,7 @@
 <template>
   <VContainer>
     <div class="navigation">
-      <div>
+      <div class="navigation__brand">
         <router-link class="navigation__link navigation__link--blank" to="/">
           <img
             :src="require('@assets/Vuelendar-logo.png')"

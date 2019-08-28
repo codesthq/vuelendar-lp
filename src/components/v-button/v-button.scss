@@ -3,7 +3,7 @@
 .button {
   display: inline-block;
   padding: size(3) size(10);
-  font-size: 24px;
+  font-size: $font-size-large;
   font-weight: 700;
   color: $color-white;
   text-decoration: none;

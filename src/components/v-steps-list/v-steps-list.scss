@@ -21,7 +21,7 @@
         position: absolute;
         top: size(-4);
         left: 0;
-        font-size: 120px;
+        font-size: $font-size-xhuge;
         font-weight: 300;
         line-height: 1;
         color: $color-green-500;
@@ -51,7 +51,7 @@
 
   &__item-title {
     position: relative;
-    font-size: 36px;
+    font-size: $font-size-xlarge;
     font-weight: 600;
     color: $color-green-500;
 
@@ -77,7 +77,7 @@
 
   &__item-paragraph {
     margin: 0;
-    font-size: 18px;
+    font-size: $font-size-normal;
     line-height: 2;
 
     & + & {

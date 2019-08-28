@@ -12,7 +12,7 @@
   box-shadow: size(3) 0 size(8) size(-3) rgba($color-black, 0);
   transition: transform 400ms ease-in-out, box-shadow 400ms ease-in-out;
   transform: translateX(100%);
-  will-change: box-shadow;
+  will-change: box-shadow, transform;
 
   &--opened {
     box-shadow: size(3) 0 size(8) size(-2) rgba($color-black, 0.5);
@@ -71,7 +71,7 @@
   &__link {
     display: block;
     padding: size(3) size(2);
-    font-size: 18px;
+    font-size: $font-size-normal;
     color: $color-black;
     text-align: right;
     text-decoration: none;

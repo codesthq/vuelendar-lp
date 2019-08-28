@@ -23,13 +23,13 @@
   &__title {
     display: block;
     margin: 0;
-    font-size: 60px;
+    font-size: $font-size-huge;
     font-weight: 500;
     color: $color-gray-800;
   }
 
   &__subtitle {
-    font-size: 36px;
+    font-size: $font-size-xlarge;
     font-weight: 400;
     color: $color-gray-800;
   }

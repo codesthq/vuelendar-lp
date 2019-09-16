@@ -1,5 +1,6 @@
 import Home from '@views/Home';
 import Demo from '@views/Demo';
+import Docs from '@views/Docs';
 import About from '@views/About';
 
 export default [
@@ -21,7 +22,7 @@ export default [
   {
     path: '/docs',
     name: 'docs',
-    component: About,
+    component: Docs,
   },
   {
     path: '/team',

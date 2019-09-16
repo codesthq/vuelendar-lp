@@ -7,6 +7,9 @@ describe('@components/v-button', () => {
       slots: {
         default: slotContent,
       },
+      propsData: {
+        to: { name: 'home' },
+      },
     });
     expect(element.innerHTML).toContain(slotContent);
   });

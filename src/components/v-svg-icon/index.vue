@@ -19,9 +19,9 @@ export default {
   async mounted() {
     // For some reason JEST don't like @assets alias with !!raw-loader! plugin...
     // Maybe move raw loader as default plugin for svg?
-    const iconObject = await import(
-      '!!raw-loader!./../../assets/icons/' + this.icon + '.svg'
-    );
+    const iconObject = require('!!raw-loader!./../../assets/icons/' +
+      this.icon +
+      '.svg');
     this.content = iconObject.default;
   },
 };

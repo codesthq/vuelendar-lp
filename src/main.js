@@ -1,11 +1,23 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from '@router';
+import VueHighlightJS from 'vue-highlight.js';
+import javascript from 'highlight.js/lib/languages/javascript';
+import vue from 'vue-highlight.js/lib/languages/vue';
 
 import httpClientFactory from '@utils/httpClientFactory';
 import storeFactory from '@store';
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
+
+// Highlightjs config
+Vue.use(VueHighlightJS, {
+  // Register only languages that you want
+  languages: {
+    javascript,
+    vue,
+  },
+});
 
 // If running inside Cypress ensure tests fail when Vue emits an error.
 if (process.env.VUE_APP_TEST === 'e2e') {

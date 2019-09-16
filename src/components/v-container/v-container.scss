@@ -11,13 +11,25 @@
 
   @include respond-to('medium') {
     width: $breakpoint-medium;
+
+    &--inner {
+      width: #{$breakpoint-medium - 250px};
+    }
   }
 
   @include respond-to('large') {
     width: $breakpoint-large;
+
+    &--inner {
+      width: #{$breakpoint-large - 250px};
+    }
   }
 
   @include respond-to('x-large') {
     width: $breakpoint-x-large;
+
+    &--inner {
+      width: #{$breakpoint-x-large - 250px};
+    }
   }
 }

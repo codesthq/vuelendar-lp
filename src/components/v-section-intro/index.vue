@@ -15,7 +15,7 @@
       </div>
       <ul class="section-intro__actions">
         <li class="section-intro__action">
-          <VButton :to="{ name: 'home' }">Live Demo</VButton>
+          <VButton :to="{ name: 'demo' }">Live Demo</VButton>
         </li>
         <li class="section-intro__action">
           <VButton type="ghost" :to="{ name: 'home' }">Dowanload</VButton>

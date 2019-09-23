@@ -3,15 +3,26 @@
 
 .page-docs {
   &__container {
-    display: flex;
+    display: block;
+
+    @include respond-to('medium') {
+      display: flex;
+    }
   }
 
   &__side-nav {
-    flex: 0 0 auto;
-    width: 250px;
+    display: none;
+
+    @include respond-to('medium') {
+      display: block;
+      flex: 0 0 auto;
+      width: 250px;
+    }
   }
 
   &__content {
-    flex: 1 1 auto;
+    @include respond-to('medium') {
+      flex: 1 1 auto;
+    }
   }
 }

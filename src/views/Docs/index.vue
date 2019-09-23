@@ -19,9 +19,9 @@
 
                 <VSection>
                   <template v-slot:title>
-                    <a id="introduction-features" href="#introduction-features"
-                      >Features</a
-                    >
+                    <a id="introduction-features" href="#introduction-features">
+                      Features
+                    </a>
                   </template>
                   <template v-slot:default>
                     <p>
@@ -123,9 +123,9 @@
                 </VSection>
                 <VSection>
                   <template v-slot:title>
-                    <a id="day-selector-props" href="#day-selector-props"
-                      >Props</a
-                    >
+                    <a id="day-selector-props" href="#day-selector-props">
+                      Props
+                    </a>
                   </template>
                   <template v-slot:default>
                     <h4>disabled-dates</h4>
@@ -136,12 +136,11 @@
                     Disable 21st April 2019 and 25th April 2019:
                     <highlight-code lang="vue">
                       <pre>
-                      &lt;v-day-selector v-model="date" disabled-dates="[
-                        '2019-04-21',
-                        '2019-04-25'
-                      ] /&gt;
-                    </pre
-                      >
+                        &lt;v-day-selector v-model="date" disabled-dates="[
+                          '2019-04-21',
+                          '2019-04-25'
+                        ] /&gt;
+                      </pre>
                     </highlight-code>
 
                     <h5>Using object</h5>
@@ -149,12 +148,11 @@
                     Disable all dates from 21st April 2019 and 25th April 2019:
                     <highlight-code lang="vue">
                       <pre>
-                      &lt;v-day-selector v-model="date" disabled-dates="{
-                        from: '2019-04-21',
-                        to: '2019-04-23',
-                      }" /&gt;
-                    </pre
-                      >
+                        &lt;v-day-selector v-model="date" disabled-dates="{
+                          from: '2019-04-21',
+                          to: '2019-04-23',
+                        }" /&gt;
+                      </pre>
                     </highlight-code>
 
                     Specifying only 'from' attribute will disable all dates past

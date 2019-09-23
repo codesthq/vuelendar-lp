@@ -1,0 +1,18 @@
+@import '~@design';
+
+.section {
+  &__header {
+    margin-bottom: size(4);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    color: $color-gray-800;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

@@ -28,12 +28,16 @@
   }
 }
 
-/* stylelint-disable-next-line */
+/* stylelint-disable */
 #nprogress .bar {
   background-color: $color-green-500;
 }
 
 .app {
   min-height: 100vh;
+}
+
+a {
+  color: $color-green-500;
 }
 </style>

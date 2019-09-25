@@ -37,6 +37,10 @@
   min-height: 100vh;
 }
 
+pre {
+  margin: 0;
+}
+
 a {
   color: $color-green-500;
 }

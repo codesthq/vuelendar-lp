@@ -5,6 +5,8 @@ import VueHighlightJS from 'vue-highlight.js';
 import inViewportDirective from 'vue-in-viewport-directive';
 import bash from 'highlight.js/lib/languages/bash';
 import javascript from 'highlight.js/lib/languages/javascript';
+import xml from 'highlight.js/lib/languages/xml';
+import scss from 'highlight.js/lib/languages/scss';
 import vue from 'vue-highlight.js/lib/languages/vue';
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
@@ -15,6 +17,8 @@ Vue.use(VueHighlightJS, {
   languages: {
     bash,
     javascript,
+    scss,
+    xml,
     vue,
   },
 });

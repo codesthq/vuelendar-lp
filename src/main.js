@@ -2,7 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from '@router';
 import VueHighlightJS from 'vue-highlight.js';
-
+import inViewportDirective from 'vue-in-viewport-directive';
 import bash from 'highlight.js/lib/languages/bash';
 import javascript from 'highlight.js/lib/languages/javascript';
 import vue from 'vue-highlight.js/lib/languages/vue';
@@ -18,6 +18,9 @@ Vue.use(VueHighlightJS, {
     vue,
   },
 });
+
+// Setup directives
+Vue.directive('in-viewport', inViewportDirective);
 
 // If running inside Cypress ensure tests fail when Vue emits an error.
 if (process.env.VUE_APP_TEST === 'e2e') {

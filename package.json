@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --modern",
     "test": "run-s test:unit test:e2e",
     "lint": "run-s lint:all:*",
     "deploy": "gh-pages-deploy",

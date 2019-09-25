@@ -2,22 +2,22 @@
   <nav class="inline-navlist">
     <ul class="inline-navlist__list">
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'features' }">
-          Features
+        <router-link class="inline-navlist__link" :to="{ name: 'home' }" exact>
+          Home
         </router-link>
       </li>
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'demo' }">
+        <router-link class="inline-navlist__link" :to="{ name: 'demo' }" exact>
           Demo
         </router-link>
       </li>
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'docs' }">
+        <router-link class="inline-navlist__link" :to="{ name: 'docs' }" exact>
           Docs
         </router-link>
       </li>
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'team' }">
+        <router-link class="inline-navlist__link" :to="{ name: 'team' }" exact>
           Team
         </router-link>
       </li>

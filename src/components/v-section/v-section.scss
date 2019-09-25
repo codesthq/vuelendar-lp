@@ -1,6 +1,10 @@
 @import '~@design';
 
 .section {
+  & + & {
+    margin-top: size(8);
+  }
+
   &__header {
     margin-bottom: size(4);
   }

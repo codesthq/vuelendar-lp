@@ -2,6 +2,7 @@ import Home from '@views/Home';
 import Demo from '@views/Demo';
 import Docs from '@views/Docs';
 import About from '@views/About';
+import Team from '@views/Team';
 
 export default [
   {
@@ -27,7 +28,7 @@ export default [
   {
     path: '/team',
     name: 'team',
-    component: About,
+    component: Team,
   },
   {
     path: '*',

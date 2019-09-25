@@ -29,7 +29,7 @@ if (process.env.VUE_APP_TEST === 'e2e') {
     router,
     render: (h) => h(App),
     mounted: () => document.dispatchEvent(new Event('x-app-rendered')),
-  }).$mount('#app');
+  }).$mount('#app', true);
 
   // If running e2e tests attach the app to the window for convenience
   if (process.env.VUE_APP_TEST === 'e2e') {

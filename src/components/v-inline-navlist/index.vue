@@ -7,17 +7,17 @@
         </router-link>
       </li>
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'demo' }" exact>
+        <router-link class="inline-navlist__link" :to="{ name: 'demo' }">
           Demo
         </router-link>
       </li>
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'docs' }" exact>
+        <router-link class="inline-navlist__link" :to="{ name: 'docs' }">
           Docs
         </router-link>
       </li>
       <li class="inline-navlist__item">
-        <router-link class="inline-navlist__link" :to="{ name: 'team' }" exact>
+        <router-link class="inline-navlist__link" :to="{ name: 'team' }">
           Team
         </router-link>
       </li>

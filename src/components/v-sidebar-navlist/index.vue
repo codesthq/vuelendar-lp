@@ -10,8 +10,12 @@
     </div>
     <ul class="sidebar-navlist__list">
       <li class="sidebar-navlist__item">
-        <router-link class="sidebar-navlist__link" :to="{ name: 'features' }">
-          Features
+        <router-link
+          class="sidebar-navlist__link"
+          :to="{ name: 'home' }"
+          exaxct
+        >
+          Home
         </router-link>
       </li>
       <li class="sidebar-navlist__item">

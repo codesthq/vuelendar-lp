@@ -2,7 +2,7 @@
   <div class="company-info">
     <VPane>
       <template v-slot:title>
-        <a href="#about-codest">About Codest</a>
+        <a href="#about-codest">We are Codest!</a>
       </template>
       <template v-slot:default>
         <div class="company-info__container">
@@ -15,20 +15,22 @@
           </div>
           <div class="company-info__content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-              accusantium accusantium accusantium accusantium alias culpa
-              distinctio, eius ex facere fugit harum labore libero magni, modi
-              odit perspiciatis porro sed ut velit voluptas, voluptatum!
+              A software house specialized in building products from scratch.<br />
+              We strive to turn ideas into software products.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              deleniti dignissimos dolorum facere illo iste libero magni minima
-              mollitia nostrum, pariatur praesentium quam quibusdam similique
-              soluta tempora ullam voluptates!
+              Our team consists of experienced developers and passionate product
+              designers.<br />
+              We have strong skills in Ruby, Rails, JavaScript, React, Vue.js,
+              React Native or AWS services.<br />
+              Codest builds software (backend, frontend, design) for e-commerce,
+              marketplace, adtech, fintech, proptech and SaaS industries.
             </p>
             <p>
-              Check out out <a href="https://codesthq.com/">site</a> and
-              <a href="https://codesthq.com/blog/">blog</a>.
+              Do you have any questions? Do not hesitate. We will be more than
+              happy to talk with you.<br />Write to us a
+              <a href="https://codesthq.com/#contact">message</a> or check our
+              <a href="https://codesthq.com/">website</a>.
             </p>
           </div>
         </div>

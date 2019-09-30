@@ -4,7 +4,7 @@
     :size="{ medium: 10 }"
     class="section-usage"
   >
-    <h2 class="section-usage__title">Usage</h2>
+    <h2 class="section-usage__title" id="section-usage">Usage</h2>
     <VStepsList />
   </VPageSection>
 </template>

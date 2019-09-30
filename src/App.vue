@@ -14,6 +14,7 @@
   font-family: 'Quicksand', sans-serif;
   font-size: $font-mobile-base;
   background-color: $color-white;
+  scroll-behavior: smooth;
 
   @include respond-to('small') {
     font-size: $font-desktop-base;

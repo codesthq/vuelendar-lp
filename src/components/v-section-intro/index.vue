@@ -18,7 +18,9 @@
           <VButton :to="{ name: 'demo' }">Live Demo</VButton>
         </li>
         <li class="section-intro__action">
-          <VButton type="ghost" :to="{ name: 'home' }">Download</VButton>
+          <a href="#section-usage" class="button button--ghost">
+            Download
+          </a>
         </li>
       </ul>
 

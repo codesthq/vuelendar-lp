@@ -15,20 +15,20 @@
           </div>
           <div class="company-info__content">
             <p>
-              A software house specialized in building products from scratch.<br />
-              We strive to turn ideas into software products.
+              A software house specialized in building products from scratch. We
+              strive to turn ideas into software products.
             </p>
             <p>
               Our team consists of experienced developers and passionate product
-              designers.<br />
-              We have strong skills in Ruby, Rails, JavaScript, React, Vue.js,
-              React Native or AWS services.<br />
-              Codest builds software (backend, frontend, design) for e-commerce,
-              marketplace, adtech, fintech, proptech and SaaS industries.
+              designers. We have strong skills in Ruby, Rails, JavaScript,
+              React, Vue.js, React Native or AWS services. Codest builds
+              software (backend, frontend, design) for e-commerce, marketplace,
+              adtech, fintech, proptech and SaaS industries.
             </p>
             <p>
-              Do you have any questions? Do not hesitate. We will be more than
-              happy to talk with you.<br />Write to us a
+              Do you have any questions? Do not hesitate to reach out and we are
+              more than happy to chat.<br />
+              Write to us a
               <a href="https://codesthq.com/#contact">message</a> or check our
               <a href="https://codesthq.com/">website</a>.
             </p>

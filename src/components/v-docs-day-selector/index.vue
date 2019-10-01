@@ -96,7 +96,7 @@ import VPane from '@components/v-pane';
 import VSection from '@components/v-section';
 
 export default {
-  name: 'VDocsIntro',
+  name: 'VDocsDaySelector',
   components: {
     VPane,
     VSection,

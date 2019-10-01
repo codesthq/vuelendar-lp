@@ -1,0 +1,100 @@
+@import '~@design';
+
+.prop-definition {
+  & + & {
+    padding-top: size(4);
+    margin-top: size(4);
+    border-top: 1px dotted $color-gray-100;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: size(2);
+  }
+
+  &__name {
+    margin-right: size(2);
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__type {
+    margin-bottom: size(1);
+    vertical-align: middle;
+
+    a {
+      display: inline-block;
+      padding: size(0.4) size(0.8);
+      margin: 0 size(0.5);
+      font-size: $font-size-micro;
+      color: $color-green-500;
+      text-decoration: none;
+      background-color: $color-white;
+      border: 1px solid rgba($color-green-500, 0.5);
+      border-radius: size(100);
+      box-shadow: 0 size(1) size(1) size(-0.5) rgba($color-green-500, 0);
+      transition: background-color 250ms ease-in-out, border 250ms ease-in-out,
+        box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $color-white;
+        background-color: $color-green-500;
+        border: 1px solid rgba($color-green-500, 0);
+        box-shadow: 0 size(1) size(1) size(-0.5) rgba($color-green-500, 0.4);
+      }
+    }
+
+    .icon {
+      display: inline-block;
+      margin: 0 size(0.5);
+      line-height: 1;
+      vertical-align: middle;
+
+      &:before {
+        font-size: $font-size-micro;
+        color: $color-gray-700;
+        vertical-align: middle;
+        content: '=>';
+      }
+    }
+
+    .brackets {
+      display: inline-block;
+      margin: 0 size(0.5);
+      line-height: 1;
+      vertical-align: middle;
+
+      &:before,
+      &:after {
+        margin: 0 size(0.5);
+        font-size: $font-size-micro;
+        color: $color-gray-700;
+        vertical-align: middle;
+        content: '(';
+      }
+
+      &:after {
+        content: ')';
+      }
+
+      &--pointy {
+        &:before {
+          content: '<';
+        }
+        &:after {
+          content: '>';
+        }
+      }
+    }
+  }
+
+  &__description {
+    font-size: $font-size-small;
+  }
+}

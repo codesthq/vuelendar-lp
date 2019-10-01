@@ -21,6 +21,9 @@
         <a class="side-nav__link" href="#installation">Installation</a>
       </li>
       <li class="side-nav__list-item">
+        <a class="side-nav__link" href="#types">Types</a>
+      </li>
+      <li class="side-nav__list-item">
         <a class="side-nav__link" href="#day-selector">Day selector</a>
         <ol class="side-nav__list side-nav__list--inner">
           <li class="side-nav__list-item">

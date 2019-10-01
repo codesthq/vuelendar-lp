@@ -6,7 +6,7 @@
       </h3>
     </header>
 
-    <div>
+    <div class="section__content">
       <slot></slot>
     </div>
   </section>

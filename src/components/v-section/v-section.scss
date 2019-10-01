@@ -20,4 +20,9 @@
       text-decoration: none;
     }
   }
+
+  &__content {
+    padding-left: size(3);
+    border-left: 1px solid $color-gray-100;
+  }
 }

@@ -9,6 +9,7 @@
           <VContainer inner>
             <VDocsIntro />
             <VDocsInstallation />
+            <VDocsCustomTypes />
             <VDocsDaySelector />
             <VDocsRangeSelector />
           </VContainer>
@@ -24,6 +25,7 @@ import VContainer from '@components/v-container';
 import VSideNav from '@components/v-side-nav';
 import VDocsIntro from '@components/v-docs-intro';
 import VDocsInstallation from '@components/v-docs-installation';
+import VDocsCustomTypes from '@components/v-docs-custom-types';
 import VDocsDaySelector from '@components/v-docs-day-selector';
 import VDocsRangeSelector from '@components/v-docs-range-selector';
 
@@ -35,6 +37,7 @@ export default {
     VSideNav,
     VDocsIntro,
     VDocsInstallation,
+    VDocsCustomTypes,
     VDocsDaySelector,
     VDocsRangeSelector,
   },

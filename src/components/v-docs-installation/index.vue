@@ -34,7 +34,7 @@
 import VPane from '@components/v-pane';
 
 export default {
-  name: 'VDocsIntro',
+  name: 'VDocsInstallation',
   components: {
     VPane,
   },

@@ -39,52 +39,98 @@
           </a>
         </template>
         <template v-slot:default>
-          <h4>disabled-dates</h4>
-          Vuelendar allows two ways for disabling dates.
+          <VPropDefinition
+            id="day-selector-prop-selected-date"
+            type="DateString"
+          >
+            <template v-slot:name>
+              selected-date
+            </template>
+            <template v-slot:default>
+              Selected date
+            </template>
+          </VPropDefinition>
+          <VPropDefinition id="day-selector-prop-custom-classes" type="String">
+            <template v-slot:name>
+              custom-classes
+            </template>
+            <template v-slot:default>
+              Defines custom classes
+            </template>
+          </VPropDefinition>
+          <VPropDefinition
+            id="day-selector-prop-default-date"
+            type="DateString"
+          >
+            <template v-slot:name>
+              default-date
+            </template>
+            <template v-slot:default>
+              [TBA]
+            </template>
+          </VPropDefinition>
+          <VPropDefinition
+            id="day-selector-prop-disabled-dates"
+            type="Array"
+            :argumentsTypes="['DateString']"
+            :is-pointy-bracket="true"
+          >
+            <template v-slot:name>
+              disabled-dates
+            </template>
+            <template v-slot:default>
+              Array of <a href="#types-date-string">DataString</a>
+              [TBA]
+            </template>
+          </VPropDefinition>
+          <VPropDefinition
+            id="day-selector-prop-is-disabled"
+            type="Function"
+            returnType="Boolean"
+            :argumentsTypes="['DateString']"
+          >
+            <template v-slot:name>
+              is-disabled
+            </template>
+            <template v-slot:default>
+              <p>
+                Function that should decide if given date should be disabled.
+              </p>
 
-          <h5>Using array</h5>
-
-          Disable 21st April 2019 and 25th April 2019:
-          <highlight-code lang="vue">
-            <pre>
-              &lt;v-day-selector v-model="date" disabled-dates="[
-                '2019-04-21',
-                '2019-04-25'
-              ] /&gt;
-            </pre>
-          </highlight-code>
-
-          <h5>Using object</h5>
-
-          Disable all dates from 21st April 2019 and 25th April 2019:
-          <highlight-code lang="vue">
-            <pre>
-              &lt;v-day-selector v-model="date" disabled-dates="{
-                from: '2019-04-21',
-                to: '2019-04-23',
-              }" /&gt;
-            </pre>
-          </highlight-code>
-
-          Specifying only 'from' attribute will disable all dates past that
-          date. Disable all dates from 21st April 2019:
-          <highlight-code lang="vue">
-            <pre>
-              &lt;v-day-selector v-model="date" disabled-dates="{
-                from: '2019-04-21',
-              }" /&gt;
-            </pre>
-          </highlight-code>
-
-          Specifying only 'to' attribute will disable all dates before that
-          date. Disable all dates before 21st April 2019
-          <highlight-code lang="vue">
-            <pre>
-              &lt;v-day-selector v-model="date" disabled-dates="{
-                to: '2019-04-21',
-              }" /&gt;
-            </pre>
-          </highlight-code>
+              <highlight-code lang="vue">
+                <pre>
+                  &lt;v-day-selector
+                    :start-date.sync=&quot;range.start&quot;
+                    :end-date.sync=&quot;range.end&quot;
+                    :is-disabled=&quot;date =&gt; date > '2020-01-01'&quot;
+                  /&gt;
+                </pre>
+              </highlight-code>
+              <p>
+                In this example dates later than 1st of January 2020 will be
+                disabled.
+              </p>
+            </template>
+          </VPropDefinition>
+          <VPropDefinition id="day-selector-prop-single-month" type="Boolean">
+            <template v-slot:name>
+              single-month
+            </template>
+            <template v-slot:default>
+              [TBA]
+            </template>
+          </VPropDefinition>
+          <VPropDefinition
+            id="day-selector-prop-first-day-of-week"
+            type="String"
+          >
+            <template v-slot:name>
+              first-day-of-week
+            </template>
+            <template v-slot:default>
+              [TBA]
+            </template>
+          </VPropDefinition>
         </template>
       </VSection>
     </template>
@@ -94,12 +140,14 @@
 <script>
 import VPane from '@components/v-pane';
 import VSection from '@components/v-section';
+import VPropDefinition from '@components/v-prop-definition';
 
 export default {
   name: 'VDocsDaySelector',
   components: {
     VPane,
     VSection,
+    VPropDefinition,
   },
 };
 </script>

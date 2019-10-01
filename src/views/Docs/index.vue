@@ -7,85 +7,8 @@
         </div>
         <div class="page-docs__content">
           <VContainer inner>
-            <VPane>
-              <template v-slot:title>
-                <a id="introduction" href="#introduction">Introduction</a>
-              </template>
-
-              <template v-slot:default>
-                <p>
-                  Simple and clean calendar written in Vue.js.
-                </p>
-
-                <VSection>
-                  <template v-slot:title>
-                    <a id="introduction-features" href="#introduction-features">
-                      Features
-                    </a>
-                  </template>
-                  <template v-slot:default>
-                    <p>
-                      Select single date
-                    </p>
-
-                    <p>
-                      Select range of dates
-                    </p>
-                  </template>
-                </VSection>
-
-                <VSection>
-                  <template v-slot:title>
-                    <a
-                      id="introduction-requirements"
-                      href="#introduction-requirements"
-                      >Requirements</a
-                    >
-                  </template>
-                  <template v-slot:default>
-                    <ul>
-                      <li>
-                        Vue.js
-                      </li>
-                    </ul>
-                  </template>
-                </VSection>
-
-                <VSection>
-                  <template v-slot:title>
-                    <a id="introduction-demo" href="#introduction-demo">Demo</a>
-                  </template>
-                  <template v-slot:default>
-                    <p>
-                      <router-link :to="{ name: 'demo' }"
-                        >Go to demo page</router-link
-                      >.
-                    </p>
-                  </template>
-                </VSection>
-              </template>
-            </VPane>
-            <VPane>
-              <template v-slot:title>
-                <a id="installation" href="#installation">Installation</a>
-              </template>
-              <template v-slot:default>
-                <p>
-                  Install package
-                </p>
-                <highlight-code lang="bash">
-                  npm install vuelendar@1.0.0
-                </highlight-code>
-                <p>
-                  Include calendar styles
-                </p>
-                <highlight-code lang="vue">
-                  <pre>
-                    &lt;style src="vuelendar/scss/vuelendar.scss" lang="scss"&gt;&lt;/style&gt;
-                  </pre>
-                </highlight-code>
-              </template>
-            </VPane>
+            <VDocsIntro />
+            <VDocsInstallation />
             <VPane>
               <template v-slot:title>
                 <a id="day-selector" href="#day-selector">Day selector</a>
@@ -260,6 +183,8 @@ import VContainer from '@components/v-container';
 import VSideNav from '@components/v-side-nav';
 import VPane from '@components/v-pane';
 import VSection from '@components/v-section';
+import VDocsIntro from '@components/v-docs-intro';
+import VDocsInstallation from '@components/v-docs-installation';
 
 export default {
   name: 'Docs',
@@ -269,6 +194,8 @@ export default {
     VSideNav,
     VPane,
     VSection,
+    VDocsIntro,
+    VDocsInstallation,
   },
   page: {
     title: 'Documentation',

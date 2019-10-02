@@ -6,15 +6,18 @@
     <main>
       <slot />
     </main>
+    <VFooter />
   </div>
 </template>
 <script>
 import VNavigation from '@components/v-navigation';
+import VFooter from '@components/v-footer';
 
 export default {
   name: 'Main',
   components: {
     VNavigation,
+    VFooter,
   },
 };
 </script>

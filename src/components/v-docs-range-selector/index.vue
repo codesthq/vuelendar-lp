@@ -17,7 +17,7 @@
               import VRangeSelector from 'vuelendar/components/vl-range-selector';
               export default {
                 components: {
-                  VDaySelector
+                  VRangeSelector
                 },
                 data () {
                   return { range: {} }

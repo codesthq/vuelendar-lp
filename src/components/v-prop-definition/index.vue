@@ -37,6 +37,7 @@
 <script>
 export const TYPES = {
   DateString: '#types-date-string',
+  FunctionObject: '#types-function-object',
   String:
     'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String',
   Boolean:

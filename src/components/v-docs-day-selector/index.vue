@@ -47,15 +47,27 @@
               selected-date
             </template>
             <template v-slot:default>
-              Selected date
+              Currently Selected date
             </template>
           </VPropDefinition>
-          <VPropDefinition id="day-selector-prop-custom-classes" type="String">
+          <VPropDefinition
+            id="day-selector-prop-custom-classes"
+            type="FunctionObject"
+          >
             <template v-slot:name>
               custom-classes
             </template>
             <template v-slot:default>
-              Defines custom classes
+              <p>
+                Defines custom classes. Those will be added to day input
+                (<code>.vl-calendar-month__day</code>).
+              </p>
+              <p>
+                Object should consist of key-function pairs, where key defines
+                class to be added and function should return Boolean weather
+                class should be added or not. Function get date in
+                <a href="#types-date-string">DateString</a> as an argument.
+              </p>
             </template>
           </VPropDefinition>
           <VPropDefinition
@@ -66,21 +78,21 @@
               default-date
             </template>
             <template v-slot:default>
-              [TBA]
-            </template>
-          </VPropDefinition>
-          <VPropDefinition
-            id="day-selector-prop-disabled-dates"
-            type="Array"
-            :argumentsTypes="['DateString']"
-            :is-pointy-bracket="true"
-          >
-            <template v-slot:name>
-              disabled-dates
-            </template>
-            <template v-slot:default>
-              Array of <a href="#types-date-string">DataString</a>
-              [TBA]
+              <p>
+                Based on this date active month and year is calculated.
+              </p>
+              <highlight-code lang="vue">
+                <pre>
+                  &lt;v-day-selector
+                    v-model=&quot;date&quot;
+                    :default-date=&quot;'2020-01-01'&quot;
+                  /&gt;
+                </pre>
+              </highlight-code>
+              <p>
+                In this example active month will be January and active year
+                2020.
+              </p>
             </template>
           </VPropDefinition>
           <VPropDefinition
@@ -100,8 +112,7 @@
               <highlight-code lang="vue">
                 <pre>
                   &lt;v-day-selector
-                    :start-date.sync=&quot;range.start&quot;
-                    :end-date.sync=&quot;range.end&quot;
+                    v-model=&quot;date&quot;
                     :is-disabled=&quot;date =&gt; date > '2020-01-01'&quot;
                   /&gt;
                 </pre>
@@ -117,7 +128,7 @@
               single-month
             </template>
             <template v-slot:default>
-              [TBA]
+              Render only one month pane.
             </template>
           </VPropDefinition>
           <VPropDefinition
@@ -128,7 +139,10 @@
               first-day-of-week
             </template>
             <template v-slot:default>
-              [TBA]
+              <p>
+                First day of the week based on day short.
+              </p>
+              <p> Default: <code>mon</code> </p>
             </template>
           </VPropDefinition>
         </template>

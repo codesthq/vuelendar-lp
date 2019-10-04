@@ -23,6 +23,27 @@
           </p>
         </template>
       </VSection>
+      <VSection>
+        <template v-slot:title>
+          <a id="types-function-object" href="#types-function-object">
+            FunctionObject
+          </a>
+        </template>
+        <template v-slot:default>
+          <p>
+            Object that should consist of key-function pairs.
+          </p>
+          Example:
+          <highlight-code lang="javascript">
+            <pre>
+              {
+                'example-class': date => date > '2010-02-20',
+                'event-class': date => date === '2020-01-01',
+              }
+            </pre>
+          </highlight-code>
+        </template>
+      </VSection>
     </template>
   </VPane>
 </template>

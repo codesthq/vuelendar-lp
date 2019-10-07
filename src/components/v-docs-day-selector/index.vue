@@ -47,7 +47,7 @@
               selected-date
             </template>
             <template v-slot:default>
-              Currently Selected date
+              Currently Selected date.
             </template>
           </VPropDefinition>
           <VPropDefinition
@@ -59,13 +59,13 @@
             </template>
             <template v-slot:default>
               <p>
-                Defines custom classes. Those will be added to day input
+                Defines custom classes. Those will be added to a day input
                 (<code>.vl-calendar-month__day</code>).
               </p>
               <p>
-                Object should consist of key-function pairs, where key defines
-                class to be added and function should return Boolean weather
-                class should be added or not. Function get date in
+                An object should consist of key-function pairs, where key
+                defines a class to be added and function should return Boolean
+                weather class should be added or not. Function get date in
                 <a href="#types-date-string">DateString</a> as an argument.
               </p>
             </template>
@@ -79,7 +79,7 @@
             </template>
             <template v-slot:default>
               <p>
-                Based on this date active month and year is calculated.
+                Based on this date active month and year are calculated.
               </p>
               <highlight-code lang="vue">
                 <pre>
@@ -106,7 +106,8 @@
             </template>
             <template v-slot:default>
               <p>
-                Function that should decide if given date should be disabled.
+                A function that should decide if a given date should be
+                disabled.
               </p>
 
               <highlight-code lang="vue">
@@ -140,7 +141,7 @@
             </template>
             <template v-slot:default>
               <p>
-                First day of the week based on day short.
+                First day of the week based on day short name.
               </p>
               <p> Default: <code>mon</code> </p>
             </template>

@@ -72,13 +72,13 @@
             </template>
             <template v-slot:default>
               <p>
-                Defines custom classes. Those will be added to day input
+                Defines custom classes. Those will be added to a day input
                 (<code>.vl-calendar-month__day</code>).
               </p>
               <p>
-                Object should consist of key-function pairs, where key defines
-                class to be added and function should return Boolean weather
-                class should be added or not. Function get date in
+                The object should consist of key-function pairs, where key
+                defines a class to be added and function should return Boolean
+                weather class should be added or not. Function get date in
                 <a href="#types-date-string">DateString</a> as an argument.
               </p>
             </template>
@@ -92,7 +92,7 @@
             </template>
             <template v-slot:default>
               <p>
-                Based on this date active month and year is calculated.
+                Based on this date active month and year are calculated.
               </p>
               <highlight-code lang="vue">
                 <pre>
@@ -125,7 +125,7 @@
               disabled
             </template>
             <template v-slot:default>
-              Disable input
+              Disable input.
             </template>
           </VPropDefinition>
           <VPropDefinition
@@ -139,7 +139,8 @@
             </template>
             <template v-slot:default>
               <p>
-                Function that should decide if given date should be disabled.
+                A function that should decide if a given date should be
+                disabled.
               </p>
 
               <highlight-code lang="vue">
@@ -152,7 +153,7 @@
                 </pre>
               </highlight-code>
               <p>
-                In this example dates later than 1st of January 2020 will be
+                In this example dates later than the 1st of January 2020 will be
                 disabled.
               </p>
             </template>
@@ -173,7 +174,7 @@
               enable-single-date
             </template>
             <template v-slot:default>
-              Is it possible to select the same start and end date
+              Enables the possibility to select the same start and end date
             </template>
           </VPropDefinition>
           <VPropDefinition
@@ -185,7 +186,7 @@
             </template>
             <template v-slot:default>
               <p>
-                First day of the week based on day short.
+                First day of the week based on day short name.
               </p>
               <p> Default: <code>mon</code> </p>
             </template>

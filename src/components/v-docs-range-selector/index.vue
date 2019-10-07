@@ -117,7 +117,7 @@
               block-start-date
             </template>
             <template v-slot:default>
-              [TBA]
+              Block change of start date - control only end date.
             </template>
           </VPropDefinition>
           <VPropDefinition id="range-selector-prop-disabled" type="Boolean">
@@ -173,7 +173,7 @@
               enable-single-date
             </template>
             <template v-slot:default>
-              [TBA]
+              Is it possible to select the same start and end date
             </template>
           </VPropDefinition>
           <VPropDefinition
